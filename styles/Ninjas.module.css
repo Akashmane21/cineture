@@ -1,0 +1,116 @@
+
+.All_movies{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Movie_block{
+  padding: 10px;
+
+  /* display: block; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: position 1s top ;
+  transition: box-shadow 0.3s ease-in-out;
+
+
+}
+
+
+.Movie_block:hover{
+  cursor: pointer;
+  /* box-shadow: 0px 10px 30px -20px black; */
+  box-shadow: 10px 10px 0px rgb(19, 61, 37);
+
+  position: relative;
+  top: -10px;
+}
+
+
+
+.Video > iframe{
+  height: 100vh;
+  width: 100%;
+
+}
+.Movie_block > h3{
+  font-size: 20px;
+  height: 35px;
+  padding: 10px;
+  overflow: hidden;
+
+}
+.search{
+  width: 90%;
+  padding: 10px 5px ;
+  margin: 10px;
+  font-size: 20px;
+  color: orangered;
+  outline: 0px;
+  border: 0px;
+}
+.Ott{
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+
+}
+.Ott >img{
+  margin: 10px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+
+  box-shadow: 0px 10px 20px -10px black;
+}
+
+.Ott >img:hover{
+ cursor: pointer;
+  box-shadow: 5px 5px 0px rgb(19, 61, 37);
+
+}
+
+@media (min-width: 995px) {
+
+  .Movie_block{
+  margin: 20px 10px;
+  width: 200px;
+  }
+  
+  .Ott >img{
+    height: 100px;
+    width: auto;
+  }
+  .Movie_block > img{
+    height: 240px;
+    width: auto;
+  
+  }
+  .All_movies{
+    max-width: 70%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 995px) {
+
+  .Movie_block{
+    margin: 10px 10px;
+    width: 140px;
+    background: #161b22;
+
+  }
+  .Ott >img{
+    height: 60px;
+    width: auto;
+  }
+  .Movie_block > img{
+    height: 190px;
+    width: auto;
+  
+  }
+
+
+  
+}
